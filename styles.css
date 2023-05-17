@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--soft-magenta: hsl(300, 69%, 71%);
+	--body-font: 'Open Sans', sans-serif;
+	--heading-font: 'Poppins', sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.9rem;
+	font-family: var(--body-font);
+	background-image: url(images/bg-mobile.svg);
+	background-repeat: no-repeat;
+	background-color: var(--violet);
+}
+
+header img {
+	width: 40%;
+	max-width: 150px;
+	margin-top: 2rem;
+	margin-left: 3rem;
+}
+
+.hero-image {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	margin-bottom: 8rem;
+}
+
+.hero-image img {
+	width: 80%;
+	max-width: 500px;
+}
+
+.info-section {
+	text-align: center;
+	color: white;
+}
+
+.title {
+	font-size: 3rem;
+	font-family: var(--heading-font);
+}
+
+.button {
+	margin-top: 2rem;
+	padding: 1.5rem 10rem;
+	outline: 0;
+	border: 0;
+	font-family: var(--heading-font);
+	color: var(--violet);
+	background-color: white;
+	border-radius: 25px;
+}
+
+.button:hover {
+	color: white;
+	background-color: var(--soft-magenta);
+	box-shadow: 0px 0px 50px 20px hsla(0, 0%, 0%, 0.15);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		font-size: 1.9rem;
+		font-family: var(--body-font);
+		background-image: url(images/bg-desktop.svg);
+		background-repeat: repeat;
+		background-color: var(--violet);
+	}
+
+	header img {
+		width: 40%;
+		max-width: 250px;
+		margin-top: 5rem;
+		margin-left: 7rem;
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+		margin-top: 7rem;
+		margin-left: 7rem;
+		margin-right: 7rem;
+		max-height: 100vh;
+	}
+
+	.hero-image {
+		margin: 0;
+		width: 200%;
+		height: auto;
+		max-width: 1000px;
+	}
+
+	.info-section {
+		text-align: left;
+	}
+
+	.title {
+		font-size: 4rem;
+	}
+
+	.button {
+		padding: 1.8rem 8rem;
+		font-size: 2rem;
+		border-radius: 50px;
+	}
+	.attribution {
+		margin-top: 10rem;
+	}
+}
